@@ -1,9 +1,9 @@
 const path = require('path')
 const abs = (...args) => path.resolve(__dirname, ...args)
 
-module.exports = {
+module.exports = (mode='development') => ({
 
-  mode: 'development',
+  mode,
   devtool: 'source-map',
 
   module: {
@@ -24,4 +24,4 @@ module.exports = {
     ],
   },
 
-}
+})
