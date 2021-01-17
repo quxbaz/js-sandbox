@@ -2,3 +2,5 @@ node_modules/
 dist/
 .log/
 /lib
+/public/bundle.js
+/public/bundle.js.map
